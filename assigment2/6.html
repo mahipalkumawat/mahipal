@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeepBreathe</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffeef2;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 400px;
+  margin: auto;
+  padding: 1rem;
+}
+
+header .time {
+  text-align: right;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.greeting h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.greeting p {
+  margin: 0.2rem 0 1rem;
+  color: #333;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.card.highlight {
+  background: linear-gradient(135deg, #6ec6ff, #ffcc80);
+  color: #fff;
+}
+
+.card h2 {
+  margin: 0;
+}
+
+.card p {
+  margin: 0.3rem 0 1rem;
+  font-size: 0.9rem;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meta-small {
+  font-size: 0.75rem;
+  color: #777;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.paths {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+.paths button {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.paths button.active {
+  background-color: #000;
+  color: #fff;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+  background-color: #fff;
+  position: sticky;
+  bottom: 0;
+  border-top: 1px solid #eee;
+}
+
+footer button {
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="time">9:46 PM</div>
+    </header>
+    
+    <section class="main">
+      <div class="greeting">
+        <h1>Good Morning, Rahul</h1>
+        <p>Top meditation program for you</p>
+      </div>
+      
+      <div class="card highlight">
+        <h2>Let it go</h2>
+        <p>Don't Judge Yourself</p>
+        <div class="meta">
+          <button>Play</button>
+          <span>32 min</span>
+        </div>
+        <div class="meta-small">
+          <span>8 tracks</span>
+          <span>2 min read</span>
+        </div>
+      </div>
+      
+      <div class="paths">
+        <button class="active">Recommended</button>
+        <button>Breathe</button>
+        <button>Calm</button>
+        <button>Music</button>
+      </div>
+      
+      <div class="card">
+        <h2>What is meditation</h2>
+        <p>From conflict to harmony</p>
+        <div class="meta">
+          <button>Play</button>
+          <span>10 min</span>
+        </div>
+        <div class="meta-small">
+          <span>4 tracks</span>
+          <span>1 min read</span>
+        </div>
+      </div>
+      
+      <div class="card">
+        <h2>Learn to sit</h2>
+        <p>Discover the art of stillness</p>
+        <div class="meta">
+          <button>Play</button>
+          <span>14 min</span>
+        </div>
+        <div class="meta-small">
+          <span>4 tracks</span>
+          <span>2 min read</span>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <button>Meditation</button>
+      <button>Sleep</button>
+      <button>Progress</button>
+    </footer>
+  </div>
+</body>
+</html>

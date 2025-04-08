@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meditation Scene</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background-color: #f8f4f2;
+      }
+      
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        gap: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      
+      .image-section {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      
+      .image-section img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="image-section top">
+      <img src="group-meditation.jpg" alt="Group Meditation" />
+    </div>
+    <div class="image-section bottom">
+      <img src="solo-meditation.jpg" alt="Solo Meditation" />
+    </div>
+  </div>
+</body>
+</html>
+
+

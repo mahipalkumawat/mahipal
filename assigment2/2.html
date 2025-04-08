@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation App</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0d0cb;
+}
+
+.container {
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #e0bebe;
+    color: #333;
+    cursor: pointer;
+}
+
+nav .active {
+    background-color: #333;
+    color: white;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    position: relative;
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.duration {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.zen {
+    background-color: #f9d9b6;
+}
+
+.reflection {
+    background-color: #d4eef7;
+}
+
+.visualization {
+    background-color: #fad4db;
+}
+
+.loving {
+    background-color: #fdf3b4;
+}
+
+.focus {
+    background-color: #dcd9f6;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hi, Martha</h1>
+            <nav>
+                <button class="active">Inner Peace</button>
+                <button>Sleep</button>
+                <button>Stress</button>
+                <button>Anxiety</button>
+            </nav>
+        </header>
+
+        <section class="cards">
+            <div class="card zen">
+                <h2>Zen Meditation</h2>
+                <span class="duration">20 min</span>
+            </div>
+            <div class="card reflection">
+                <h2>Reflection</h2>
+                <span class="duration">6 min</span>
+            </div>
+            <div class="card visualization">
+                <h2>Visualization</h2>
+                <span class="duration">13 min</span>
+            </div>
+            <div class="card loving">
+                <h2>Loving Kindness</h2>
+                <span class="duration">15 min</span>
+            </div>
+            <div class="card focus">
+                <h2>Focused Attention</h2>
+                <span class="duration">10 min</span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+

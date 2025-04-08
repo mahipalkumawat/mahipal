@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meditation App</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #fce5e6;
+        color: #333;
+      }
+      
+      .top-bar {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: #fff;
+        font-weight: bold;
+        border-bottom: 1px solid #ccc;
+      }
+      
+      .icons span {
+        margin-left: 15px;
+      }
+      
+      .intro {
+        padding: 20px;
+        background-color: #fce5e6;
+      }
+      
+      .back-btn {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+      
+      .intro h1 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+      }
+      
+      .intro p {
+        font-size: 1rem;
+        color: #555;
+      }
+      
+      .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 20px 20px 20px;
+      }
+      
+      .card {
+        border-radius: 12px;
+        padding: 15px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+      .welcome {
+        background-color: #60e3e8;
+      }
+      
+      .harmony {
+        background-color: #9e68f0;
+      }
+      
+      .serenity {
+        background-color: #5fc66e;
+      }
+      
+      .stillness {
+        background-color: #58b3f5;
+      }
+      
+      .card h2 {
+        margin: 0;
+        font-size: 1.3rem;
+      }
+      
+      .card p {
+        margin: 5px 0 10px;
+      }
+      
+      .action {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      
+      .action button {
+        background-color: #fff;
+        color: #333;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      
+      .action span {
+        background-color: #fff;
+        color: #333;
+        padding: 5px 8px;
+        border-radius: 8px;
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <span>9:46 PM</span>
+      <div class="icons">
+        <span>Meditation</span>
+        <span>Sleep</span>
+        <span>Progress</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <button class="back-btn">&#8592;</button>
+      <h1>What is meditation</h1>
+      <p>Meditation is a practice in which an individual uses a technique to train attention and awareness, and achieve a mentally clear and emotionally calm and stable state.</p>
+    </section>
+
+    <section class="cards">
+      <div class="card welcome">
+        <h2>Welcome</h2>
+        <p>Find your inner peace</p>
+        <div class="action">
+          <button>Play</button>
+          <span>2 min</span>
+        </div>
+      </div>
+
+      <div class="card harmony">
+        <h2>Harmony</h2>
+        <p>Balance mind and body</p>
+        <div class="action">
+          <button>Play</button>
+          <span>3 min</span>
+        </div>
+      </div>
+
+      <div class="card serenity">
+        <h2>Serenity</h2>
+        <p>Find peace in nature</p>
+        <div class="action">
+          <button>Play</button>
+          <span>2 min</span>
+        </div>
+      </div>
+
+      <div class="card stillness">
+        <h2>Stillness</h2>
+        <p>Quiet your thoughts</p>
+        <div class="action">
+          <button>Read</button>
+          <span>1 min</span>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
+
+---
+
+CSS (styles.css)
+
